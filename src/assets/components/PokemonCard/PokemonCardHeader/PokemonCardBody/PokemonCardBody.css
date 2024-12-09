@@ -1,0 +1,134 @@
+.pokemon-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    font-size: 0.6rem;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    margin-bottom: 10px;
+}
+
+.test {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.pokemon-name {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.icon-type {
+    width: 20px;
+    height: 20px;
+}
+
+.hp-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.hp-text {
+    font-size: 8px;
+    margin-top: 5px;
+}
+
+.hp-number {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.wh-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(255, 247, 205);
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: 900;
+    width: 255px;
+}
+
+.pokemon-img {
+    width: 190px;
+    height: 190px;
+}
+
+.img-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 150px;
+    border-radius: 3px;
+    border: 2px solid rgb(182, 182, 182);
+    margin-bottom: 5px;
+}
+
+.img-fire {
+    background-image: url('/img-background-fire.jpg');
+}
+
+.img-grass {
+    background-image: url('/img-background-grass.jpg');
+}
+
+.img-electric {
+    background-image: url('/img-background-electric.jpg');
+}
+
+.img-water {
+    background-image: url('/img-background-water.jpg');
+}
+
+.img-poison {
+    background-image: url('/img-background-poison.jpg');
+}
+
+.img-normal {
+    background-image: url('/img-background-normal.jpg');
+}
+
+.img-bug {
+    background-image: url('/img-background-bug.jpg');
+}
+
+.img-ghost {
+    background-image: url('/img-background-ghost.jpg');
+}
+
+.img-fighting {
+    background-image: url('/img-background-fighting.jpg');
+}
+
+.img-rock {
+    background-image: url('/img-background-rock.jpg');
+}
+
+.img-fairy {
+    background-image: url('/img-background-fairy.jpg');
+}
+
+.img-ground {
+    background-image: url('/img-background-ground.jpg');
+}
+
+.img-psychic {
+    background-image: url('/img-background-psychic.jpg');
+}

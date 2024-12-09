@@ -1,0 +1,132 @@
+:root {
+    --card-outline: 7px solid rgb(179, 179, 179);
+    --card-border-radius: 5px;
+}
+
+.pokemon-card-fire {
+    border-radius: var(--card-border-radius);
+    box-shadow: 5px 5px 10px rgb(215, 215, 215);
+    width: 300px;
+    height: 400px;
+    background: url('/public/background-fire.svg');
+    background-size: cover;
+}
+
+.pokemon-card-grass {
+    border-radius: var(--card-border-radius);
+    width: 300px;
+    height: 400px;
+    background: url('/public/background-grass.svg');
+    background-size: cover;
+}
+
+.pokemon-card-electric {
+    border-radius: var(--card-border-radius);
+    box-shadow: 5px 5px 10px rgb(215, 215, 215);
+    width: 300px;
+    height: 400px;
+    background: url('/public/background-electric.svg');
+    background-size: cover;
+}
+
+.pokemon-card-water {
+    border-radius: var(--card-border-radius);
+    box-shadow: 5px 5px 10px rgb(215, 215, 215);
+    width: 300px;
+    height: 400px;
+    background: url('/public/background-water.svg');
+    background-size: cover;
+}
+
+.pokemon-card-poison {
+    border-radius: var(--card-border-radius);
+    box-shadow: 5px 5px 10px rgb(215, 215, 215);
+    width: 300px;
+    height: 400px;
+    background: url('/public/background-poison.svg');
+    background-size: cover;
+}
+
+.pokemon-card-normal {
+    border-radius: var(--card-border-radius);
+    box-shadow: 5px 5px 10px rgb(215, 215, 215);
+    width: 300px;
+    height: 400px;
+    background: url('/public/background-normal.svg');
+    background-size: cover;
+}
+
+.pokemon-card-ghost {
+    border-radius: var(--card-border-radius);
+    box-shadow: 5px 5px 10px rgb(215, 215, 215);
+    width: 300px;
+    height: 400px;
+    background: url('/public/background-ghost.svg');
+    background-size: cover;
+}
+
+.pokemon-card-bug {
+    border-radius: var(--card-border-radius);
+    box-shadow: 5px 5px 10px rgb(215, 215, 215);
+    width: 300px;
+    height: 400px;
+    background: url('/public/background-bug.svg');
+    background-size: cover;
+}
+
+.pokemon-card-fighting {
+    border-radius: var(--card-border-radius);
+    box-shadow: 5px 5px 10px rgb(215, 215, 215);
+    width: 300px;
+    height: 400px;
+    background: url('/public/background-fighting.svg');
+    background-size: cover;
+}
+
+.pokemon-card-rock {
+    border-radius: var(--card-border-radius);
+    box-shadow: 5px 5px 10px rgb(215, 215, 215);
+    width: 300px;
+    height: 400px;
+    background: url('/public/background-rock.svg');
+    background-size: cover;
+}
+
+.pokemon-card-fairy {
+    border-radius: var(--card-border-radius);
+    box-shadow: 5px 5px 10px rgb(215, 215, 215);
+    width: 300px;
+    height: 400px;
+    background: url('/public/background-fairy.svg');
+    background-size: cover;
+}
+
+.pokemon-card-ground {
+    border-radius: var(--card-border-radius);
+    box-shadow: 5px 5px 10px rgb(215, 215, 215);
+    width: 300px;
+    height: 400px;
+    background: url('/public/background-ground.svg');
+    background-size: cover;
+}
+
+.pokemon-card-psychic {
+    border-radius: var(--card-border-radius);
+    box-shadow: 5px 5px 10px rgb(215, 215, 215);
+    width: 300px;
+    height: 400px;
+    background: url('/public/background-psychic.svg');
+    background-size: cover;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 315px;
+    height: 415px;
+    background-color: #aeaeae;
+    border-radius: var(--card-border-radius);
+    box-shadow: 5px 5px 10px rgb(215, 215, 215);
+}
