@@ -1,0 +1,31 @@
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.footer-text {
+    font-size: 14px;
+    font-weight: 900;
+    color: #161616;
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-image {
+    width: 17px;
+    height: 17px;
+    transition: transform 0.7s ease-in-out;
+}
+
+.footer-image:hover {
+    transform: rotate(360deg);
+}

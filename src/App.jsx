@@ -2,6 +2,7 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import { PokemonCard } from './assets/components/PokemonCard/PokemonCard';
 import { Button } from './assets/components/Button/Button'
+import { Footer } from './assets/components/Footer/Footer'
 
 function App() {
   const [pokemon, setPokemon] = useState('');
@@ -74,9 +75,12 @@ function App() {
       hp={hp}
       textEntry={textEntry}
       />
+
       <Button
       handleClick={handleClick}
       />
+
+      <Footer />
     </div>
   );
 }
