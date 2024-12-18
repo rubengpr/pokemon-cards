@@ -129,4 +129,5 @@
     background-color: #aeaeae;
     border-radius: var(--card-border-radius);
     box-shadow: 5px 5px 10px rgb(215, 215, 215);
+    margin-bottom: 20px;
 }

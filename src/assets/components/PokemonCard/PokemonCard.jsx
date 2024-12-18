@@ -2,7 +2,7 @@ import './PokemonCard.css'
 import PropType from 'prop-types'
 import { PokemonCardBody } from './PokemonCardHeader/PokemonCardBody/PokemonCardBody'
 
-export function PokemonCard({ id, pokemon, pokemonWeight, pokemonHeight, habitat, pokemonImage, hp, type }) {
+export function PokemonCard({ id, pokemon, pokemonWeight, pokemonHeight, pokemonImage, hp, type, textEntry }) {
     
     let cardClass = ''
 
@@ -58,9 +58,9 @@ export function PokemonCard({ id, pokemon, pokemonWeight, pokemonHeight, habitat
                 type={type}
                 pokemonWeight={pokemonWeight}
                 pokemonHeight={pokemonHeight}
-                habitat={habitat}
                 pokemonImage={pokemonImage}
                 hp={hp}
+                textEntry={textEntry}
                 />
             </div>
         </div>
@@ -73,7 +73,7 @@ PokemonCard.propTypes = {
     type: PropType.string,
     pokemonWeight: PropType.number,
     pokemonHeight: PropType.number,
-    habitat: PropType.string,
     pokemonImage: PropType.string,
     hp: PropType.number,
+    textEntry: PropType.string,
 }

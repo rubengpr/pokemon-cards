@@ -1,7 +1,7 @@
 import './PokemonCardBody.css'
 import PropType from 'prop-types'
 
-export function PokemonCardBody({ id, pokemon, type, pokemonImage, pokemonWeight, pokemonHeight, habitat, hp }) {
+export function PokemonCardBody({ id, pokemon, type, pokemonImage, pokemonWeight, pokemonHeight, hp, textEntry }) {
     function capFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
       }
@@ -114,7 +114,7 @@ export function PokemonCardBody({ id, pokemon, type, pokemonImage, pokemonWeight
                 <p>Weight: {pokemonWeight}kg</p>
                 <p>Height: {pokemonHeight}cm</p>
             </div>
-            <p>Habitat: {capFirstLetter(habitat)}</p>
+            <p className='intro-text'>{textEntry}</p>
         </div>
     )
 }
@@ -127,7 +127,7 @@ PokemonCardBody.propTypes = {
     pokemonImage: PropType.string,
     pokemonWeight: PropType.number,
     pokemonHeight: PropType.number,
-    habitat: PropType.string,
     description: PropType.string,
     hp: PropType.number,
+    textEntry: PropType.string,
 }

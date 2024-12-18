@@ -1,25 +1,28 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import { PokemonCard } from './assets/components/PokemonCard/PokemonCard';
-
-const id = Math.floor(Math.random() * 100);
-const URL = `https://pokeapi.co/api/v2/pokemon/${id}`;
+import { Button } from './assets/components/Button/Button'
 
 function App() {
   const [pokemon, setPokemon] = useState('');
   const [type, setType] = useState('');
+  const [id, setId] = useState((Math.floor(Math.random() * 100)));
   const [pokemonWeight, setPokemonWeight] = useState('');
   const [pokemonHeight, setPokemonHeight] = useState('');
-  const [habitat, setHabitat] = useState('');
   const [pokemonImage, setPokemonImage] = useState('');
   const [hp, setHp] = useState('');
+  const [textEntry, setTextEntry] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
 
+  const handleClick = () => {
+    setId(Math.floor(Math.random() * 100));
+  };
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(URL);
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
         if (!response.ok) {
           throw new Error(`An error has occurred while fetching Pokémon data. Status: ${response.status}`);
         }
@@ -37,7 +40,7 @@ function App() {
           throw new Error(`An error has occurred while fetching species data. Status ${speciesResponse.status}`)
         }
         const speciesResult = await speciesResponse.json();
-        setHabitat(speciesResult.habitat.name)
+        setTextEntry(speciesResult.flavor_text_entries[0].flavor_text)
         console.log(speciesResult)
         
       } catch (err) {
@@ -48,7 +51,7 @@ function App() {
     };
 
     fetchData();
-  }, []);
+  }, [id]);
 
   // Early return for loading and error states
   if (isLoading) {
@@ -60,16 +63,21 @@ function App() {
   }
 
   return (
-    <PokemonCard
-    id={id}
-    pokemon={pokemon}
-    type={type}
-    pokemonWeight={pokemonWeight}
-    pokemonHeight={pokemonHeight}
-    pokemonImage={pokemonImage}
-    habitat={habitat}
-    hp={hp}
-    />
+    <div className='body-content'>
+      <PokemonCard
+      id={id}
+      pokemon={pokemon}
+      type={type}
+      pokemonWeight={pokemonWeight}
+      pokemonHeight={pokemonHeight}
+      pokemonImage={pokemonImage}
+      hp={hp}
+      textEntry={textEntry}
+      />
+      <Button
+      handleClick={handleClick}
+      />
+    </div>
   );
 }
 

@@ -9,3 +9,10 @@ body {
 p {
     margin: 0;
 }
+
+.body-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
