@@ -64,24 +64,25 @@ function App() {
   }
 
   return (
-    <div className='body-content'>
-      <PokemonCard
-      id={id}
-      pokemon={pokemon}
-      type={type}
-      pokemonWeight={pokemonWeight}
-      pokemonHeight={pokemonHeight}
-      pokemonImage={pokemonImage}
-      hp={hp}
-      textEntry={textEntry}
-      />
+    <>
+      <div className='body-content'>
+        <PokemonCard
+        id={id}
+        pokemon={pokemon}
+        type={type}
+        pokemonWeight={pokemonWeight}
+        pokemonHeight={pokemonHeight}
+        pokemonImage={pokemonImage}
+        hp={hp}
+        textEntry={textEntry}
+        />
 
-      <Button
-      handleClick={handleClick}
-      />
-
+        <Button
+        handleClick={handleClick}
+        />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

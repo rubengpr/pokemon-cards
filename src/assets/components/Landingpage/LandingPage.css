@@ -1,16 +1,26 @@
-body {
+.landing-wrapper {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
-    margin: 0;
+a {
+    text-decoration: none;
 }
 
-.body-content {
+.pokemon-logo {
+    width: 30%;
+    height: auto;
+}
+
+.landing-description {
+    margin: 0px 0px 20px 0px;
+}
+
+.landing-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
