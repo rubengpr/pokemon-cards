@@ -4,6 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(254, 228, 195);
 }
 
 p {
