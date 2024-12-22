@@ -4,6 +4,9 @@
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+    width: 100%;
+    padding: 4px;
+    cursor: pointer;
 }
 
 .option-img {
@@ -13,4 +16,9 @@
 
 .option-title {
     font-size: 14px;
+}
+
+.sidebar-option:hover {
+    background-color: rgb(229, 229, 229);
+    border-radius: 5px;
 }

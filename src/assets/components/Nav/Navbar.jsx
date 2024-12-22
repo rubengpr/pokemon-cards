@@ -10,7 +10,10 @@ export function Navbar() {
                 </div>
                 <h3 className='app-title'>Pokémon Cards</h3>
             </div>
-            <input className='sidebar-input' type="text" placeholder='Search' />
+            <div className='input-wrapper'>
+                <img className='icon-search' src="./public/search.svg" alt="A magnifyer glass icon" />
+                <input className='sidebar-input' type="text" placeholder='Search' />
+            </div>
             <div className='options-wrapper top-options'>
                 <SidebarOption />
                 <SidebarOption />
@@ -23,6 +26,13 @@ export function Navbar() {
                 <SidebarOption />
                 <SidebarOption />
                 <SidebarOption />
+            </div>
+            <div className='avatar'>
+                <img className='sidebar-avatar' src="./public/ash-avatar.png" alt="Avatar image" />
+                <div className='text-wrapper'>
+                    <p className='username'>Ash Ketchum</p>
+                    <p className='user-alias'>@ashpikapika</p>
+                </div>
             </div>
         </nav>
     )
