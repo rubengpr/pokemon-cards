@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { PokemonCard } from './assets/components/PokemonCard/PokemonCard';
 import { Button } from './assets/components/Button/Button'
 import { Footer } from './assets/components/Footer/Footer'
+import { Navbar } from './assets/components/Nav/navbar';
 
 function App() {
   const [pokemon, setPokemon] = useState('');
@@ -65,6 +66,7 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <div className='body-content'>
         <PokemonCard
         id={id}

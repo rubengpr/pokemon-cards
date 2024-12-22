@@ -1,0 +1,73 @@
+nav {
+    width: 12vw;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(253, 253, 253);
+    gap: 10px;
+    border-radius: 10px;
+    margin: 1vh;
+    padding: 12px;
+}
+
+.a-nav {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.options-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 8px;
+}
+
+.sidebar-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-img-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(132, 183, 255);
+    border-radius: 12px;
+}
+
+.header-img {
+    width: 30px;
+    height: auto;
+    margin: 3px;
+}
+
+.app-title {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.sidebar-input {
+    border-radius: 5px;
+    background-color: rgb(241, 241, 241);
+    border: 0;
+    width: 90%;
+    height: 26px;
+    margin: 0px 0px 5px 0px;
+    padding-left: 10px;
+    color: black;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: rgb(235, 235, 235);
+    margin: 20px 0;
+}
+
+.top-options {
+    margin-bottom: 350px;
+}

@@ -1,0 +1,16 @@
+.sidebar-option {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.option-img {
+    width: 20px;
+    height: auto;
+}
+
+.option-title {
+    font-size: 14px;
+}
