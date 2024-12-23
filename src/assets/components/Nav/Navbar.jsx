@@ -23,7 +23,6 @@ export function Navbar() {
             <div className='bottom-wrapper'>
                 <div className='options-wrapper bottom-options'>
                     <SidebarOption optionIcon="./public/icon-settings.svg" optionName="Settings" page="/settings" />
-                    <SidebarOption optionIcon="./public/icon-profile.svg" optionName="Profile" page="/profile" />
                 </div>
                 <div className='avatar'>
                     <img className='sidebar-avatar' src="./public/ash-avatar.png" alt="Avatar image" />

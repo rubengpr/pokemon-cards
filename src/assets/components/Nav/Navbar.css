@@ -82,7 +82,11 @@ hr {
     flex-direction: row;
     align-items: center;
     gap: 12px;
-    margin-top: 30px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .username {
@@ -120,7 +124,6 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    margin-bottom: 20px;
 }
 
 .bottom-options {
