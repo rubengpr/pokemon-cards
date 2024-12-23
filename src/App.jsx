@@ -2,7 +2,6 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import { PokemonCard } from './assets/components/PokemonCard/PokemonCard';
 import { Button } from './assets/components/Button/Button'
-import { Footer } from './assets/components/Footer/Footer'
 import { Navbar } from './assets/components/Nav/navbar';
 
 function App() {
@@ -65,7 +64,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className='content'>
       <Navbar />
       <div className='body-content'>
         <PokemonCard
@@ -83,8 +82,7 @@ function App() {
         handleClick={handleClick}
         />
       </div>
-      <Footer />
-    </>
+    </div>
   );
 }
 

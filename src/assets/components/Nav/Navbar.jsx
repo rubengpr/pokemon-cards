@@ -15,23 +15,22 @@ export function Navbar() {
                 <input className='sidebar-input' type="text" placeholder='Search' />
             </div>
             <div className='options-wrapper top-options'>
-                <SidebarOption />
-                <SidebarOption />
-                <SidebarOption />
-                <SidebarOption />
-                <SidebarOption />
+                <SidebarOption optionIcon="./public/icon-home.svg" optionName="Home" page="/" />
+                <SidebarOption optionIcon="./public/icon-cards.svg" optionName="Cards" page="/cards" />
+                <SidebarOption optionIcon="./public/icon-pokedex.svg" optionName="Pokédex" page="/pokedex" />
             </div>
             <hr />
-            <div className='options-wrapper'>
-                <SidebarOption />
-                <SidebarOption />
-                <SidebarOption />
-            </div>
-            <div className='avatar'>
-                <img className='sidebar-avatar' src="./public/ash-avatar.png" alt="Avatar image" />
-                <div className='text-wrapper'>
-                    <p className='username'>Ash Ketchum</p>
-                    <p className='user-alias'>@ashpikapika</p>
+            <div className='bottom-wrapper'>
+                <div className='options-wrapper bottom-options'>
+                    <SidebarOption optionIcon="./public/icon-settings.svg" optionName="Settings" page="/settings" />
+                    <SidebarOption optionIcon="./public/icon-profile.svg" optionName="Profile" page="/profile" />
+                </div>
+                <div className='avatar'>
+                    <img className='sidebar-avatar' src="./public/ash-avatar.png" alt="Avatar image" />
+                    <div className='text-wrapper'>
+                        <p className='username'>Ash Ketchum</p>
+                        <p className='user-alias'>@ashpikapika</p>
+                    </div>
                 </div>
             </div>
         </nav>

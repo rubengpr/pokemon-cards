@@ -18,6 +18,11 @@
     font-size: 14px;
 }
 
+a {
+    color: black;
+    width: 100%;
+}
+
 .sidebar-option:hover {
     background-color: rgb(229, 229, 229);
     border-radius: 5px;
