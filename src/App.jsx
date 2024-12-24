@@ -19,19 +19,23 @@ function App() {
   const [idArray, setIdArray] = useState([]);
 
   const handleClick = () => {
-  const newId = Math.floor(Math.random() * 100);
-  setIdArray(prevArray => {
-    if (!prevArray.includes(newId)) {
-      setId(newId); // Update the selected ID
-      setCountCards(idArray.length); // Increment card count based on updated length
-      return [...prevArray, newId]; // Add the new ID to the array
-    }
-    return prevArray; // If newId already exists, return the current array
-  });
+  const newId = Math.ceil(Math.random() * 100);
+  setId(newId);
+
 };
 
-
   useEffect(() => {
+    setIdArray(prevArray => {
+      if (!prevArray.includes(id)) {
+        setCountCards(idArray.length);
+        return [...prevArray, id]; // Add the new ID to the array
+      }
+      return prevArray; // If newId already exists, return the current array
+    });
+
+    const sortedArray = idArray.sort()
+    console.log(sortedArray)
+
     const fetchData = async () => {
       try {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
@@ -39,7 +43,6 @@ function App() {
           throw new Error(`An error has occurred while fetching Pokémon data. Status: ${response.status}`);
         }
         const result = await response.json();
-        console.log(result);
         setPokemon(result.name);
         setType(result.types[0].type.name);
         setPokemonImage(result.sprites.other.dream_world.front_default)
@@ -53,7 +56,6 @@ function App() {
         }
         const speciesResult = await speciesResponse.json();
         setTextEntry(speciesResult.flavor_text_entries[0].flavor_text)
-        console.log(speciesResult)
         
       } catch (err) {
         setError(err.message);
