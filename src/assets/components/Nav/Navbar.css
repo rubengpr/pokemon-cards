@@ -129,3 +129,26 @@ hr {
 .bottom-options {
     margin-top: 20px;
 }
+
+.cards-counter {
+    font-weight: 900;
+    font-size: 12px;
+    background-color: rgb(252, 232, 188);
+    color: rgb(244, 167, 0);
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.cards-option {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 96%;
+    padding-right: 10px;
+}
+
+.cards-option:hover {
+    background-color: rgb(229, 229, 229);
+    border-radius: 5px;
+}

@@ -15,11 +15,22 @@ function App() {
   const [textEntry, setTextEntry] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
+  const [countCards, setCountCards] = useState(0);
+  const [idArray, setIdArray] = useState([]);
 
   const handleClick = () => {
-    setId(Math.floor(Math.random() * 100));
-  };
-  
+  const newId = Math.floor(Math.random() * 100);
+  setIdArray(prevArray => {
+    if (!prevArray.includes(newId)) {
+      setId(newId); // Update the selected ID
+      setCountCards(idArray.length); // Increment card count based on updated length
+      return [...prevArray, newId]; // Add the new ID to the array
+    }
+    return prevArray; // If newId already exists, return the current array
+  });
+};
+
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -65,7 +76,9 @@ function App() {
 
   return (
     <div className='content'>
-      <Navbar />
+      <Navbar
+      countCards={countCards}
+      />
       <div className='body-content'>
         <PokemonCard
         id={id}
@@ -80,6 +93,7 @@ function App() {
 
         <Button
         handleClick={handleClick}
+        countCards={countCards}
         />
       </div>
     </div>

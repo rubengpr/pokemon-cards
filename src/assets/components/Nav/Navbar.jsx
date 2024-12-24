@@ -1,7 +1,8 @@
 import './Navbar.css'
 import { SidebarOption } from '../SidebarOption/SidebarOption'
+import PropTypes from 'prop-types'
 
-export function Navbar() {
+export function Navbar({ countCards }) {
     return(
         <nav>
             <div className='sidebar-header'>
@@ -16,7 +17,10 @@ export function Navbar() {
             </div>
             <div className='options-wrapper top-options'>
                 <SidebarOption optionIcon="./public/icon-home.svg" optionName="Home" page="/" />
-                <SidebarOption optionIcon="./public/icon-cards.svg" optionName="Cards" page="/cards" />
+                <div className='cards-option'>
+                    <SidebarOption optionIcon="./public/icon-cards.svg" optionName="Cards" page="/cards" />
+                    <p className='cards-counter'>{countCards}/100</p>
+                </div>
                 <SidebarOption optionIcon="./public/icon-pokedex.svg" optionName="Pokédex" page="/pokedex" />
             </div>
             <hr />
@@ -34,4 +38,8 @@ export function Navbar() {
             </div>
         </nav>
     )
+}
+
+Navbar.propTypes = {
+    countCards: PropTypes.number,
 }

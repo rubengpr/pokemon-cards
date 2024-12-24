@@ -18,5 +18,4 @@ SidebarOption.propTypes = {
     optionIcon: PropTypes.string,
     optionName: PropTypes.string,
     page: PropTypes.string,
-
 }
