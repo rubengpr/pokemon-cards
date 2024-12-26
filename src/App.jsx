@@ -3,11 +3,12 @@ import { useState, useEffect } from 'react';
 import { PokemonCard } from './assets/components/PokemonCard/PokemonCard';
 import { Button } from './assets/components/Button/Button'
 import { Navbar } from './assets/components/Nav/navbar';
+import { NavbarLite } from './assets/components/NavbarLite/Navbarlite';
 
 function App() {
   const [pokemon, setPokemon] = useState('');
   const [type, setType] = useState('');
-  const [id, setId] = useState((Math.floor(Math.random() * 100)));
+  const [id, setId] = useState((Math.ceil(Math.random() * 100)));
   const [pokemonWeight, setPokemonWeight] = useState('');
   const [pokemonHeight, setPokemonHeight] = useState('');
   const [pokemonImage, setPokemonImage] = useState('');
@@ -16,7 +17,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
   const [countCards, setCountCards] = useState(0);
-  const [idArray, setIdArray] = useState([]);
+  const [idArray, setIdArray] = useState([id]);
 
   const handleClick = () => {
   const newId = Math.ceil(Math.random() * 100);
@@ -27,8 +28,8 @@ function App() {
   useEffect(() => {
     setIdArray(prevArray => {
       if (!prevArray.includes(id)) {
-        setCountCards(idArray.length);
-        return [...prevArray, id]; // Add the new ID to the array
+        setCountCards(prevArray.length + 1);
+        return [...prevArray, id];
       }
       return prevArray; // If newId already exists, return the current array
     });
@@ -65,7 +66,7 @@ function App() {
     };
 
     fetchData();
-  }, [id]);
+  }, [id, idArray]);
 
   // Early return for loading and error states
   if (isLoading) {
@@ -81,6 +82,7 @@ function App() {
       <Navbar
       countCards={countCards}
       />
+      <NavbarLite />
       <div className='body-content'>
         <PokemonCard
         id={id}

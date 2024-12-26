@@ -1,0 +1,11 @@
+.icon-sidebar-lite {
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+}
+
+.icon-sidebar-lite:hover {
+    background-color: rgb(229, 229, 229);
+    border-radius: 5px;
+    cursor: pointer;
+}

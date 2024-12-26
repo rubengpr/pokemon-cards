@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 export function Navbar({ countCards }) {
     return(
-        <nav>
+        <nav className='nav-full'>
             <div className='sidebar-header'>
                 <div className='header-img-wrapper'>
                     <img className='header-img' src="./public/pokeball.png" alt="A pokeball" />

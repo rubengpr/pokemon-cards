@@ -6,7 +6,6 @@
     gap: 10px;
     width: 100%;
     padding: 5px;
-    cursor: pointer;
 }
 
 .option-img {
@@ -26,4 +25,5 @@ a {
 .sidebar-option:hover {
     background-color: rgb(229, 229, 229);
     border-radius: 5px;
+    cursor: pointer;
 }
