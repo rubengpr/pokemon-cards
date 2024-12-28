@@ -3,6 +3,9 @@ import PropType from 'prop-types'
 
 export function PokemonCardBody({ id, pokemon, type, pokemonImage, pokemonWeight, pokemonHeight, hp, textEntry }) {
     function capFirstLetter(string) {
+        if (string === undefined || string === null || typeof string !== 'string' || string.length === 0) {
+          return '';
+        }
         return string.charAt(0).toUpperCase() + string.slice(1);
       }
 

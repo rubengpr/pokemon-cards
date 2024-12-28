@@ -31,5 +31,5 @@ export function NavbarLite({ navLiteIsHidden }) {
 }
 
 NavbarLite.propTypes = {
-    navLiteIsHidden: PropTypes.func,
+    navLiteIsHidden: PropTypes.bool,
 }
