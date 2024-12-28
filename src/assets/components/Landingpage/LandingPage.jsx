@@ -9,7 +9,7 @@ export function LandingPage() {
                 <img className='pokemon-logo' src="./pokemon-logo.png" alt="Pokémon logo" />
                 <h1>The Pokémon cards website</h1>
                 <p className='landing-description'>Shuffle between +100 Pokémon cards. Will you catch&apos;em all?</p>
-                <Link to="cards">
+                <Link to="/cards">
                     <button className='primary-button'>Go to cards</button>
                 </Link>
             </div>
