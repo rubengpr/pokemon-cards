@@ -2,8 +2,9 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import { PokemonCard } from './assets/components/PokemonCard/PokemonCard';
 import { Button } from './assets/components/Button/Button'
-import { Navbar } from './assets/components/Nav/navbar';
+import { Navbar } from './assets/components/Nav/Navbar';
 import { NavbarLite } from './assets/components/NavbarLite/Navbarlite';
+import { NavButton } from './assets/components/NavButton/NavButton';
 
 function App() {
   const [pokemon, setPokemon] = useState('');
@@ -18,6 +19,16 @@ function App() {
   const [error, setError] = useState('');
   const [countCards, setCountCards] = useState(0);
   const [idArray, setIdArray] = useState([id]);
+  const [navIsHidden, setNavIsHidden] = useState(false);
+  const [navLiteIsHidden, setNavLiteIsHidden] = useState(true);
+
+  function swapNavbar() {
+    setNavIsHidden(!navIsHidden);
+    setNavLiteIsHidden(!navLiteIsHidden);
+  }
+
+  console.log(`navIsHidden value: ${navIsHidden}`)
+  console.log(`navLiteIsHidden value: ${navLiteIsHidden}`)
 
   const handleClick = () => {
   const newId = Math.ceil(Math.random() * 100);
@@ -81,8 +92,14 @@ function App() {
     <div className='content'>
       <Navbar
       countCards={countCards}
+      navIsHidden={navIsHidden}
       />
-      <NavbarLite />
+      <NavbarLite
+      navLiteIsHidden={navLiteIsHidden}
+      />
+      <NavButton
+      swapNavbar={swapNavbar}
+      navIsHidden={navIsHidden}/>
       <div className='body-content'>
         <PokemonCard
         id={id}

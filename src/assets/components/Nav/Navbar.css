@@ -11,6 +11,10 @@
     border: 3px solid rgb(225, 225, 225);
 }
 
+.nav-hide {
+    display: none;
+}
+
 .a-nav {
     text-decoration: none;
     color: black;

@@ -1,9 +1,14 @@
 import './NavbarLite.css'
-import { SidebarOptionLite } from '../SidebarOptionLite/SidebarOptionLite'
+import { SidebarOptionLite } from './SidebarOptionLite/SidebarOptionLite'
+import { PropTypes } from 'prop-types'
 
-export function NavbarLite() {
+export function NavbarLite({ navLiteIsHidden }) {
+    const showNavbarLite = navLiteIsHidden
+    ? 'nav-lite'
+    : 'nav-lite-hide'
+
     return(
-        <nav className='nav-lite'>
+        <nav className={showNavbarLite}>
             <div className='header-lite-img-wrapper'>
                 <img className='header-img' src="./public/pokeball.png" alt="A pokeball" />
             </div>
@@ -23,4 +28,8 @@ export function NavbarLite() {
             </div>
         </nav>
     )
+}
+
+NavbarLite.propTypes = {
+    navLiteIsHidden: PropTypes.func,
 }

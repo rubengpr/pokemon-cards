@@ -2,9 +2,13 @@ import './Navbar.css'
 import { SidebarOption } from '../SidebarOption/SidebarOption'
 import PropTypes from 'prop-types'
 
-export function Navbar({ countCards }) {
+export function Navbar({ countCards, navIsHidden }) {
+    const showNavbar = navIsHidden
+    ? 'nav-full'
+    : 'nav-hide'
+
     return(
-        <nav className='nav-full'>
+        <nav className={showNavbar}>
             <div className='sidebar-header'>
                 <div className='header-img-wrapper'>
                     <img className='header-img' src="./public/pokeball.png" alt="A pokeball" />
@@ -42,4 +46,5 @@ export function Navbar({ countCards }) {
 
 Navbar.propTypes = {
     countCards: PropTypes.number,
+    navIsHidden: PropTypes.bool,
 }

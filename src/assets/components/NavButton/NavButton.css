@@ -1,0 +1,15 @@
+.nav-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+}
