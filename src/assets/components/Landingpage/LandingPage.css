@@ -1,10 +1,19 @@
-.landing-wrapper {
-    width: 100vw;
+.landing-page {
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.landing-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
 }
 
 a {
@@ -18,13 +27,4 @@ a {
 
 .landing-description {
     margin: 0px 0px 20px 0px;
-}
-
-.landing-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 90vh;
 }
