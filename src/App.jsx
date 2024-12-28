@@ -27,9 +27,6 @@ function App() {
     setNavLiteIsHidden(!navLiteIsHidden);
   }
 
-  console.log(`navIsHidden value: ${navIsHidden}`)
-  console.log(`navLiteIsHidden value: ${navLiteIsHidden}`)
-
   const handleClick = () => {
   const newId = Math.ceil(Math.random() * 100);
   setId(newId);

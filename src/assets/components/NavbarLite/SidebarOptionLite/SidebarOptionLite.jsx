@@ -1,12 +1,16 @@
+import { Link } from 'react-router-dom'
 import './SidebarOptionLite.css'
 import { PropTypes } from 'prop-types'
 
-export function SidebarOptionLite({ optionIcon }) {
+export function SidebarOptionLite({ optionIcon, page }) {
     return(
-        <img className='icon-sidebar-lite' src={optionIcon} alt="An icon" />
+        <Link to={page}>
+            <img className='icon-sidebar-lite' src={optionIcon} alt="An icon" />
+        </Link>
     )
 }
 
 SidebarOptionLite.propTypes = {
     optionIcon: PropTypes.string,
+    page: PropTypes.string,
 }
