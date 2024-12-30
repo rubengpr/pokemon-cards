@@ -1,0 +1,28 @@
+.pokedex-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    gap: 20px;
+    border: 3px solid rgb(225, 225, 225);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.type-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.pokedex-type-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.pokedex-type-text {
+    font-size: 12px;
+}

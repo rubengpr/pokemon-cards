@@ -1,0 +1,33 @@
+.type-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.type-inner-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.pokedex-type-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.pokedex-type-text {
+    font-size: 12px;
+}
+
+.pokedex-type-counter-wrapper {
+    padding: 4px 7px;
+    border-radius: 50%;
+    background-color: rgb(226, 194, 255);
+}
+
+.pokedex-type-counter {
+    font-size: 11px;
+}

@@ -1,6 +1,6 @@
 import './CardsPage.css';
 import {  Navbar } from '../Nav/Navbar';
-import { NavbarLite } from '../NavbarLite/Navbarlite';
+import { NavbarLite } from '../NavbarLite/NavbarLite';
 import { NavButton } from '../NavButton/NavButton';
 import { PokemonCard } from '../PokemonCard/PokemonCard';
 import { Button } from '../Button/Button.jsx';
