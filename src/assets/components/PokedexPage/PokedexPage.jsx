@@ -4,6 +4,7 @@ import { Navbar } from '../Nav/Navbar';
 import { NavbarLite } from '../NavbarLite/NavbarLite';
 import { NavButton } from '../NavButton/NavButton';
 import { PokedexHeader } from './PokedexHeader/PokedexHeader';
+import { PokedexItem } from './PokedexItem/PokedexItem';
 
 export function PokedexPage({ countCards, navIsHidden, navLiteIsHidden, swapNavbar }) {
     return(
@@ -20,6 +21,21 @@ export function PokedexPage({ countCards, navIsHidden, navLiteIsHidden, swapNavb
             navIsHidden={navIsHidden}/>
             <div className='pokedex-body-content'>
                 <PokedexHeader />
+                <div className='pokedex-item-wrapper'>
+                    <PokedexItem />
+                    <PokedexItem />
+                    <PokedexItem />
+                    <PokedexItem />
+                    <PokedexItem />
+                    <PokedexItem />
+                    <PokedexItem />
+                    <PokedexItem />
+                    <PokedexItem />
+                    <PokedexItem />
+                    <PokedexItem />
+                    <PokedexItem />
+                </div>
+
             </div>
         </div>
     )
