@@ -34,6 +34,7 @@ export function CardsPage({ countCards, navIsHidden, navLiteIsHidden, handleClic
             <Button
             handleClick={handleClick}
             countCards={countCards}
+            buttonText="Get another card"
             />
             </div>
         </div>

@@ -1,12 +1,13 @@
 import './Button.css'
 import PropTypes from 'prop-types'
 
-export function Button ({ handleClick }) {
+export function Button ({ handleClick, buttonText }) {
     return (
-        <button onClick={handleClick} className='primary-button'><img className='button-icon' src="./arrow-right-circle-solid.svg" alt="An arrow icon pointing to right direction" />Get another card</button>
+        <button onClick={handleClick} className='primary-button'>{buttonText}</button>
     )
 }
 
 Button.propTypes = {
     handleClick: PropTypes.func,
+    buttonText: PropTypes.string,
 }

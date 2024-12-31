@@ -1,6 +1,7 @@
 import './Navbar.css'
 import { SidebarOption } from '../SidebarOption/SidebarOption'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 export function Navbar({ countCards, navIsHidden }) {
     const showNavbar = navIsHidden
@@ -32,13 +33,15 @@ export function Navbar({ countCards, navIsHidden }) {
                 <div className='options-wrapper bottom-options'>
                     <SidebarOption optionIcon="./public/icon-settings.svg" optionName="Settings" page="/settings" />
                 </div>
-                <div className='avatar'>
-                    <img className='sidebar-avatar' src="./public/ash-avatar.png" alt="Avatar image" />
-                    <div className='text-wrapper'>
-                        <p className='username'>Ash Ketchum</p>
-                        <p className='user-alias'>@ashpikapika</p>
+                <Link to="/profile">
+                    <div className='avatar'>
+                        <img className='sidebar-avatar' src="./public/ash-avatar.png" alt="Avatar image" />
+                        <div className='text-wrapper'>
+                            <p className='username'>Ash Ketchum</p>
+                            <p className='user-alias'>@ashpikapika</p>
+                        </div>
                     </div>
-                </div>
+                </Link>
             </div>
         </nav>
     )

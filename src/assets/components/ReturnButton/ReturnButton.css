@@ -1,0 +1,21 @@
+.return-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    padding: 0px 0px 20px 0px;
+}
+
+.return-wrapper:hover {
+    cursor: pointer;
+}
+
+.return-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.return-text {
+    font-size: 12px;
+}

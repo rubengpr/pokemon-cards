@@ -1,0 +1,31 @@
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-input {
+    appearance: none;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkbox-input:checked::after {
+    content: "✔";
+    color: rgb(0, 0, 0);
+    display: block;
+    text-align: center;
+    line-height: 20px; /* Center the checkmark */
+  }
+
+.checkbox-text {
+    margin-left: 10px;
+    font-size: 14px;
+}
