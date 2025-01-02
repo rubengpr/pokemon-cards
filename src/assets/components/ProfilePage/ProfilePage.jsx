@@ -2,6 +2,7 @@ import './ProfilePage.css';
 import { LabelInput } from '../LabelInput/LabelInput.jsx';
 import { Button } from '../Button/Button.jsx';
 import { ReturnButton } from '../ReturnButton/ReturnButton.jsx';
+import { Select } from '../Select/Select.jsx'
 
 export function ProfilePage() {
     return(
@@ -26,8 +27,8 @@ export function ProfilePage() {
                     <LabelInput labelName="Surname" id="surname" />
                     <LabelInput labelName="Email" id="email" />
                     <LabelInput labelName="Phone Number" id="phone" />
-                    <LabelInput labelName="City" id="city" />
-                    <LabelInput labelName="Country" id="country" />
+                    <Select labelName="City" id="city" option1="Barcelona" option2="Madrid" />
+                    <Select labelName="Country" id="country" option1="Spain" option2="France" />
                     <Button buttonText="Save" />
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import './NavbarLite.css'
 import { SidebarOptionLite } from './SidebarOptionLite/SidebarOptionLite'
 import { PropTypes } from 'prop-types'
+import { Link } from 'react-router-dom'
 
 export function NavbarLite({ navLiteIsHidden }) {
     const showNavbarLite = navLiteIsHidden
@@ -22,9 +23,11 @@ export function NavbarLite({ navLiteIsHidden }) {
                 <div className='options-lite-wrapper bottom-options'>
                     <SidebarOptionLite optionIcon="./public/icon-settings.svg" optionName="Settings" page="/settings" />
                 </div>
-                <div className='avatar-lite'>
-                    <img className='sidebar-lite-avatar' src="./public/ash-avatar.png" alt="Avatar image" />
-                </div>
+                <Link to="/profile">
+                    <div className='avatar-lite'>
+                        <img className='sidebar-lite-avatar' src="./public/ash-avatar.png" alt="Avatar image" />
+                    </div>
+                </Link>
             </div>
         </nav>
     )

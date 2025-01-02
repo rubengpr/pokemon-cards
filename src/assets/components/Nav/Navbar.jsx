@@ -34,7 +34,7 @@ export function Navbar({ countCards, navIsHidden }) {
                     <SidebarOption optionIcon="./public/icon-settings.svg" optionName="Settings" page="/settings" />
                 </div>
                 <Link to="/profile">
-                    <div className='avatar'>
+                    <div className='avatar-card'>
                         <img className='sidebar-avatar' src="./public/ash-avatar.png" alt="Avatar image" />
                         <div className='text-wrapper'>
                             <p className='username'>Ash Ketchum</p>

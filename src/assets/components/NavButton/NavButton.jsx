@@ -6,8 +6,12 @@ export function NavButton({ swapNavbar, navIsHidden }) {
     ? 'icon-arrow-left.svg'
     : 'icon-arrow-right.svg'
 
+    const arrowPosition = navIsHidden
+    ? 'nav-button-full'
+    : 'nav-button-lite'
+
     return(
-        <button onClick={swapNavbar} className='nav-button'>
+        <button onClick={swapNavbar} className={arrowPosition}>
             <img src={arrowIcon} alt="An arrow icon" />
         </button>
     )

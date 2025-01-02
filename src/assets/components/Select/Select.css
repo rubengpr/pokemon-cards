@@ -1,0 +1,15 @@
+.input-select-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px 0px;
+}
+
+.input-select {
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 3px;
+    width: 205px;
+    height: 29px;
+    padding: 1px 0px 1px 5px;
+}

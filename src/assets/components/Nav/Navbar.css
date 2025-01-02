@@ -81,10 +81,11 @@ hr {
     background-color: white;
 }
 
-.avatar {
+.avatar-card {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
     gap: 12px;
     margin-top: 20px;
     padding: 10px;

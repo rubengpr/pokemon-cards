@@ -55,6 +55,8 @@ function App() {
               setPokemonWeight(result.weight);
               setPokemonHeight(result.height);
               setHp(result.stats[0].base_stat);
+
+              console.log(result);
       
               const speciesResponse = await fetch(result.species.url);
               if (!response.ok) {

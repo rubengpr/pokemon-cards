@@ -1,4 +1,4 @@
-.nav-button {
+.nav-button-full {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -6,10 +6,32 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid gray;
+    border: 2px solid rgb(225, 225, 225);
     background-color: white;
+    position: absolute;
+    top: 30px;
+    left: 235px;
 }
 
-.nav-button:hover {
+.nav-button-lite {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid rgb(225, 225, 225);
+    background-color: white;
+    position: absolute;
+    top: 30px;
+    left: 63px;
+}
+
+.nav-button-full:hover {
+    cursor: pointer;
+}
+
+.nav-button-lite:hover {
     cursor: pointer;
 }
