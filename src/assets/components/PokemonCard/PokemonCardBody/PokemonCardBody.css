@@ -31,6 +31,7 @@
 .icon-type {
     width: 20px;
     height: 20px;
+    margin-left: 5px;
 }
 
 .hp-box {
@@ -136,4 +137,8 @@
 
 .img-psychic {
     background-image: url('/img-background-psychic.jpg');
+}
+
+.tag-type {
+    font-size: 11px
 }

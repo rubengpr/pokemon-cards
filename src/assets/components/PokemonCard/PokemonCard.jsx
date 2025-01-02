@@ -1,6 +1,6 @@
 import './PokemonCard.css'
 import PropType from 'prop-types'
-import { PokemonCardBody } from './PokemonCardHeader/PokemonCardBody/PokemonCardBody'
+import { PokemonCardBody } from './PokemonCardBody/PokemonCardBody'
 
 export function PokemonCard({ id, pokemon, pokemonWeight, pokemonHeight, pokemonImage, hp, type, textEntry }) {
     

@@ -96,6 +96,50 @@ export function PokemonCardBody({ id, pokemon, type, pokemonImage, pokemonWeight
             iconClass = 'icon-psychic.png'
             break;
       }
+
+      let tagType = ''
+
+      switch(type) {
+        case 'fire':
+            tagType = 'Fire'
+            break;
+        case 'grass':
+            tagType = 'Grass'
+            break;
+        case 'electric':
+            tagType = 'Electric'
+            break;
+        case 'water':
+            tagType = 'Water'
+            break;
+        case 'poison':
+            tagType = 'Poison'
+            break;
+        case 'normal':
+            tagType = 'Normal'
+            break;
+        case 'ghost':
+            tagType = 'Ghost'
+            break;
+        case 'bug':
+            tagType = 'Bug'
+            break;
+        case 'fighting':
+            tagType = 'Fighting'
+            break;
+        case 'rock':
+            tagType = 'Rock'
+            break;
+        case 'fairy':
+            tagType = 'Fairy'
+            break;
+        case 'ground':
+            tagType = 'Ground'
+            break;
+        case 'psychic':
+            tagType = 'Psychic'
+            break;
+      }
     
     return(
         <div className='pokemon-card-body'>
@@ -103,6 +147,7 @@ export function PokemonCardBody({ id, pokemon, type, pokemonImage, pokemonWeight
                 <div className='test'>
                     <p className='pokemon-name'>{capFirstLetter(pokemon)}</p>
                     <img className='icon-type' src={iconClass} alt="An icon displaying the Pokémon type" />
+                    <p className='tag-type'>{tagType}</p>
                 </div>
                 <div className='hp-box'>
                     <p className='hp-text'>HP</p>
