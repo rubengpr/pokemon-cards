@@ -1,0 +1,19 @@
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.pokemon-grid-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item-img {
+    width: 50px;
+    height: auto;
+}
