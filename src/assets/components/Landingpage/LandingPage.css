@@ -5,6 +5,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #fff0b4, #ffdc52, #fff0b4);
 }
 
 .landing-body {

@@ -11,9 +11,20 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 70px;
+    animation: scroll-up 25s linear infinite;
 }
 
 .grid-item-img {
     width: 50px;
     height: auto;
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-1030%);
+    }
 }
