@@ -14,3 +14,22 @@ p {
 input {
     padding-inline: 0;
 }
+
+.loading-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 10px;
+}
+
+.loading-img {
+    width: 80px;
+    height: 80px;
+}
+
+.loading-text {
+    font-size: 12px;
+}

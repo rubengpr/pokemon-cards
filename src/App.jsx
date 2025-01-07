@@ -77,7 +77,12 @@ function App() {
       
         
         if (isLoading) {
-          return <p>Loading...</p>;
+          return(
+          <div className='loading-wrapper'>
+            <img className='loading-img' src="./public/pokeball.png" alt="A Pokéball" />
+            <p className='loading-text'>Catching Pokémons...</p>
+          </div>
+          );
         }
       
         if (error) {
