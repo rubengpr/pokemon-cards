@@ -63,7 +63,17 @@ function App() {
                 throw new Error(`An error has occurred while fetching species data. Status ${speciesResponse.status}`)
               }
               const speciesResult = await speciesResponse.json();
-              setTextEntry(speciesResult.flavor_text_entries[0].flavor_text)
+              console.log(speciesResult);
+              const englishEntry = speciesResult.flavor_text_entries.find(
+                (entry) => entry.language.name === 'en'
+              );
+              
+              // Set the text entry to the English version, or provide a fallback
+              if (englishEntry) {
+                setTextEntry(englishEntry.flavor_text);
+              } else {
+                setTextEntry('No English flavor text available.');
+              }
               
             } catch (err) {
               setError(err.message);
